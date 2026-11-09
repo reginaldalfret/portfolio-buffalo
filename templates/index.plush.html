@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reginald Alfret V | Open-Source Contributor · AI &amp; DS Engineer (Go Buffalo)</title>
+  <meta name="description" content="Open-Source Contributor, AI & Data Science Engineer, and Software Developer with 30 merged PRs across Apple, Google, Microsoft, Meta, AWS, NVIDIA, NASA, Netflix and more." />
+  <meta name="theme-color" content="#050505" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+  <!-- Instant embedded check to prevent dock flicker inside iframes -->
+  <script>
+    if (window.self !== window.top) {
+      document.documentElement.classList.add('is-embedded');
+    }
+  </script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            buffalo: {
+              DEFAULT: '#06B6D4',
+              dark: '#0891B2',
+              light: '#22D3EE'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #050505;
+      color: #f5f5f5;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    ::selection {
+      background-color: rgba(6, 182, 212, 0.25);
+      color: #67e8f9;
+    }
+    .is-embedded .floating-stack-dock,
+    html.is-embedded .floating-stack-dock {
+      display: none !important;
+    }
+    @media print {
+      .no-print {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#050505] text-neutral-100 min-h-screen">
+  <div class="min-h-screen bg-[#050505] text-neutral-100 selection:bg-cyan-500/20 selection:text-cyan-300 relative overflow-x-hidden">
+    
+    <!-- Ambient Background Glow -->
+    <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+      <div class="absolute -top-40 -left-40 w-96 h-96 bg-cyan-600/10 rounded-full blur-[128px]"></div>
+      <div class="absolute top-1/3 -right-40 w-96 h-96 bg-teal-600/10 rounded-full blur-[128px]"></div>
+      <div class="absolute -bottom-40 left-1/3 w-96 h-96 bg-blue-600/10 rounded-full blur-[128px]"></div>
+    </div>
+
+    <!-- Main Container -->
+    <main class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-12">
+      
+      <!-- Top Command Bar -->
+      <header class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 p-4 rounded-3xl bg-neutral-900/60 border border-white/10 backdrop-blur-xl">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-cyan-600 via-teal-500 to-cyan-400 flex items-center justify-center font-black text-xl text-black shadow-lg shadow-cyan-500/20">
+            🦬
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-white text-base">Reginald Alfret V</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 flex items-center gap-1 font-semibold">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+                BUFFALO · GO 1.27
+              </span>
+            </div>
+            <p class="text-xs text-neutral-400 font-mono">Open-Source Contributor · AI &amp; Data Science Engineer</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
+          <button
+            type="button"
+            onclick="togglePdfModal(true)"
+            class="px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-white/10 hover:bg-white/15 text-white transition-all flex items-center gap-1.5 border border-white/10"
+          >
+            <span>Original Resume (PDF)</span>
+          </button>
+          <a
+            href="/Reginald_Alfret_Resume.pdf"
+            download
+            class="px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-300 transition-all flex items-center gap-1.5 border border-cyan-500/40 shadow-sm"
+          >
+            <span>Download CV</span>
+            <span class="text-[10px]">↓</span>
+          </a>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-xs font-mono text-cyan-300">
+          <span>⚡ High-Performance Go Buffalo SSR Architecture</span>
+        </div>
+        <h1 class="text-3xl sm:text-5xl font-black tracking-tight text-white">
+          Engineering Scalable AI Systems &amp; <span class="bg-gradient-to-r from-cyan-400 via-teal-300 to-blue-400 bg-clip-text text-transparent">Open-Source Core</span>
+        </h1>
+        <p class="text-sm sm:text-base text-neutral-300 max-w-3xl leading-relaxed">
+          Developer with 30 merged PRs across the world's most influential technology organizations including Apple, Google, Microsoft, Meta, AWS, NVIDIA, NASA, and Netflix. Specializing in autonomous multi-agent pipelines, distributed systems, machine learning engineering, and full-stack software development.
+        </p>
+        <div class="flex flex-wrap items-center gap-4 text-xs font-mono text-neutral-400 pt-2">
+          <span>📍 Chennai, India</span>
+          <span>•</span>
+          <a href="mailto:reginaldalfret.work@gmail.com" class="text-cyan-400 hover:underline">reginaldalfret.work@gmail.com</a>
+          <span>•</span>
+          <a href="https://github.com/reginaldalfret" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">github.com/reginaldalfret</a>
+          <span>•</span>
+          <a href="https://linkedin.com/in/reginald-alfret" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">linkedin.com/in/reginald-alfret</a>
+        </div>
+      </section>
+
+      <!-- 1. Open Source Contributions (30 Merged PRs) -->
+      <section class="space-y-4">
+        <div class="flex items-center justify-between pb-2 border-b border-white/10">
+          <div class="flex items-center gap-2">
+            <span class="text-cyan-400 text-lg">⌥</span>
+            <h2 class="text-lg font-bold text-white tracking-wide">30 Merged Open-Source Contributions</h2>
+          </div>
+          <span class="text-xs font-mono text-neutral-400">Apple · Google · Microsoft · Meta · AWS · NVIDIA · NASA · Netflix</span>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2.5">
+          <%= for (c) in contributions { %>
+            <a
+              href="<%= c.URL %>"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group p-3 rounded-2xl bg-neutral-900/40 border border-white/5 hover:border-cyan-500/40 hover:bg-neutral-900/80 transition-all flex flex-col justify-between"
+            >
+              <div class="flex items-center justify-between">
+                <span class="text-xs font-bold text-white group-hover:text-cyan-300 transition-colors"><%= c.Org %></span>
+                <span class="text-[10px] font-mono text-cyan-400 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
+              </div>
+              <div class="mt-2 text-[11px] font-mono text-neutral-400 truncate">
+                <%= c.Repo %>
+              </div>
+              <div class="mt-1 text-[10px] font-mono text-emerald-400/90 flex items-center gap-1">
+                <span>Merged</span>
+                <span><%= c.PR %></span>
+              </div>
+            </a>
+          <% } %>
+        </div>
+      </section>
+
+      <!-- 2. Professional Experience -->
+      <section class="space-y-4">
+        <div class="flex items-center gap-2 pb-2 border-b border-white/10">
+          <span class="text-cyan-400 text-lg">💼</span>
+          <h2 class="text-lg font-bold text-white tracking-wide">Professional Experience</h2>
+        </div>
+
+        <div class="space-y-4">
+          <%= for (exp) in experiences { %>
+            <div class="p-5 rounded-3xl bg-neutral-900/40 border border-white/5 hover:border-white/15 transition-all space-y-3">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                <div>
+                  <h3 class="text-base font-bold text-white"><%= exp.Role %></h3>
+                  <div class="text-sm font-semibold text-cyan-400"><%= exp.Company %></div>
+                </div>
+                <div class="text-xs font-mono text-neutral-400 sm:text-right">
+                  <div><%= exp.Period %></div>
+                  <div class="text-neutral-500"><%= exp.Location %></div>
+                </div>
+              </div>
+              <ul class="space-y-1.5 text-xs sm:text-sm text-neutral-300 list-disc list-inside">
+                <%= for (bullet) in exp.Bullets { %>
+                  <li class="leading-relaxed"><%= bullet %></li>
+                <% } %>
+              </ul>
+            </div>
+          <% } %>
+        </div>
+      </section>
+
+      <!-- 3. Hackathons & Competitions -->
+      <section class="space-y-4">
+        <div class="flex items-center gap-2 pb-2 border-b border-white/10">
+          <span class="text-cyan-400 text-lg">🏆</span>
+          <h2 class="text-lg font-bold text-white tracking-wide">Hackathon Victories &amp; Honors</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <%= for (h) in hackathons { %>
+            <div class="p-5 rounded-3xl bg-neutral-900/40 border border-white/5 hover:border-cyan-500/30 transition-all flex flex-col justify-between space-y-3">
+              <div>
+                <div class="flex items-center justify-between text-xs font-mono text-neutral-400 mb-1">
+                  <span><%= h.Year %></span>
+                  <span class="px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 text-[10px] font-bold"><%= h.Award %></span>
+                </div>
+                <h3 class="text-base font-bold text-white mb-1"><%= h.Title %></h3>
+                <div class="text-xs text-neutral-400 mb-2"><%= h.Organizer %></div>
+                <p class="text-xs text-neutral-300 leading-relaxed"><%= h.Description %></p>
+              </div>
+              <div class="flex flex-wrap gap-1.5 pt-2 border-t border-white/5">
+                <%= for (t) in h.Tech { %>
+                  <span class="text-[10px] font-mono px-2 py-0.5 rounded-md bg-white/5 text-neutral-300"><%= t %></span>
+                <% } %>
+              </div>
+            </div>
+          <% } %>
+        </div>
+      </section>
+
+      <!-- 4. Featured Projects -->
+      <section class="space-y-4">
+        <div class="flex items-center gap-2 pb-2 border-b border-white/10">
+          <span class="text-cyan-400 text-lg">🚀</span>
+          <h2 class="text-lg font-bold text-white tracking-wide">Featured Engineering Projects</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <%= for (p) in projects { %>
+            <div class="p-5 rounded-3xl bg-neutral-900/40 border border-white/5 hover:border-cyan-500/30 transition-all flex flex-col justify-between space-y-4">
+              <div class="space-y-2">
+                <h3 class="text-base font-bold text-white"><%= p.Title %></h3>
+                <p class="text-xs text-neutral-400"><%= p.Subtitle %></p>
+                <ul class="space-y-1 text-xs text-neutral-300 list-disc list-inside">
+                  <%= for (hl) in p.Highlights { %>
+                    <li class="leading-relaxed"><%= hl %></li>
+                  <% } %>
+                </ul>
+              </div>
+              <div class="space-y-3 pt-3 border-t border-white/5">
+                <div class="flex flex-wrap gap-1.5">
+                  <%= for (t) in p.Tags { %>
+                    <span class="text-[10px] font-mono px-2 py-0.5 rounded-md bg-cyan-500/10 text-cyan-300 border border-cyan-500/20"><%= t %></span>
+                  <% } %>
+                </div>
+                <div class="flex items-center justify-between text-xs font-mono pt-1">
+                  <a href="<%= p.Github %>" target="_blank" rel="noopener noreferrer" class="text-neutral-400 hover:text-white transition-colors">
+                    GitHub Code ↗
+                  </a>
+                  <a href="<%= p.Demo %>" class="text-cyan-400 hover:underline">
+                    Live Details →
+                  </a>
+                </div>
+              </div>
+            </div>
+          <% } %>
+        </div>
+      </section>
+
+      <!-- 5. Technical Skills -->
+      <section class="space-y-4">
+        <div class="flex items-center gap-2 pb-2 border-b border-white/10">
+          <span class="text-cyan-400 text-lg">⚙️</span>
+          <h2 class="text-lg font-bold text-white tracking-wide">Technical Proficiencies</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
+          <%= for (cat) in skills { %>
+            <div class="p-4 rounded-2xl bg-neutral-900/40 border border-white/5 space-y-2">
+              <h3 class="text-xs font-mono font-bold text-cyan-400 tracking-wider uppercase"><%= cat.Category %></h3>
+              <div class="flex flex-wrap gap-1.5">
+                <%= for (s) in cat.Skills { %>
+                  <span class="text-xs px-2.5 py-1 rounded-xl bg-white/5 text-neutral-200 border border-white/5"><%= s %></span>
+                <% } %>
+              </div>
+            </div>
+          <% } %>
+        </div>
+      </section>
+
+      <!-- 6. Achievements & Certifications -->
+      <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="p-5 rounded-3xl bg-neutral-900/40 border border-white/5 space-y-3">
+          <div class="flex items-center gap-2 pb-2 border-b border-white/10">
+            <span class="text-cyan-400">🎖️</span>
+            <h2 class="text-base font-bold text-white">Key Achievements</h2>
+          </div>
+          <div class="space-y-3">
+            <%= for (a) in achievements { %>
+              <div>
+                <div class="text-xs font-bold text-neutral-200"><%= a.Title %></div>
+                <div class="text-xs text-neutral-400 leading-relaxed"><%= a.Description %></div>
+              </div>
+            <% } %>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-3xl bg-neutral-900/40 border border-white/5 space-y-3">
+          <div class="flex items-center gap-2 pb-2 border-b border-white/10">
+            <span class="text-cyan-400">📜</span>
+            <h2 class="text-base font-bold text-white">Certifications &amp; Credentials</h2>
+          </div>
+          <div class="space-y-3">
+            <%= for (cert) in certifications { %>
+              <div class="flex items-center justify-between text-xs">
+                <div>
+                  <div class="font-bold text-neutral-200"><%= cert.Name %></div>
+                  <div class="text-neutral-500 font-mono text-[11px]"><%= cert.Issuer %></div>
+                </div>
+                <span class="font-mono text-neutral-400 text-[11px]"><%= cert.Date %></span>
+              </div>
+            <% } %>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. Multi-Stack Architecture Showcase (9 Stacks Available) -->
+      <section class="p-6 rounded-3xl bg-neutral-900/40 border border-white/10 space-y-6">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-4 border-b border-white/10">
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-cyan-400 text-lg">🌐</span>
+              <h2 class="text-lg font-bold text-white tracking-wide">Multi-Framework Architecture Showcase</h2>
+            </div>
+            <p class="text-xs text-neutral-400 mt-1">
+              The exact same full portfolio engineered natively across 9 major web development stacks.
+            </p>
+          </div>
+          <div class="text-xs font-mono px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 self-start sm:self-auto">
+            9 Stacks Available
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-3">
+          <%= for (s) in stacks { %>
+            <div class="p-4 rounded-2xl bg-white/[0.03] border <%= s.BorderClass %> transition-all flex flex-col justify-between space-y-3">
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <div class="flex items-center gap-2">
+                    <div class="w-7 h-7 rounded-lg bg-black border border-white/20 flex items-center justify-center font-black text-xs text-white">
+                      <%= s.Icon %>
+                    </div>
+                    <span class="font-bold text-sm text-white"><%= s.Name %></span>
+                  </div>
+                  <span class="text-[10px] font-mono px-2 py-0.5 rounded-full <%= s.BadgeClass %>">
+                    <%= s.Badge %>
+                  </span>
+                </div>
+                <p class="text-xs text-neutral-400 mb-2">
+                  <%= s.Subtitle %>
+                </p>
+                <div class="text-[11px] font-mono text-neutral-400">
+                  Live Route: <a href="<%= s.Route %>" target="_top" class="text-cyan-400 hover:underline"><%= s.Route %></a>
+                </div>
+              </div>
+              <div class="space-y-2 pt-2 border-t border-white/10">
+                <%= if (s.IsCurrent) { %>
+                  <div class="w-full py-2 px-3 rounded-xl bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 font-semibold text-xs shadow-sm flex items-center justify-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+                    <span>Viewing Active Go Buffalo</span>
+                  </div>
+                <% } else { %>
+                  <a
+                    href="<%= s.Route %>"
+                    target="_top"
+                    class="w-full py-2 px-3 rounded-xl bg-white/5 hover:bg-white/10 text-neutral-200 font-semibold text-xs border border-white/10 transition-all flex items-center justify-center gap-1.5 shadow-sm"
+                  >
+                    <span>Switch to <%= s.Name %> Website</span>
+                  </a>
+                <% } %>
+                <div class="flex items-center justify-between text-xs font-mono text-neutral-400 pt-1">
+                  <a
+                    href="<%= s.Route %>"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1 hover:text-cyan-400 transition-colors"
+                  >
+                    <span>Direct Link ↗</span>
+                  </a>
+                  <a
+                    href="<%= s.Repo %>"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-1 hover:text-white transition-colors"
+                  >
+                    <span>Source Code</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          <% } %>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="pt-6 text-center text-xs text-neutral-500 space-y-2 font-mono">
+        <div class="text-neutral-400">
+          BETTER TECHNOLOGY • HAPPIER PEOPLE
+        </div>
+        <div>
+          Engineered natively with Go Buffalo 1.1.4 &amp; Go 1.27 • Built by Reginald Alfret V • 
+          <a href="/Reginald_Alfret_Resume.pdf" download class="text-cyan-400 hover:underline">Download Resume PDF</a>
+        </div>
+      </footer>
+
+    </main>
+
+    <!-- Bottom Floating Cross-Framework Dock (9 Stacks) -->
+    <div class="floating-stack-dock fixed bottom-4 left-1/2 -translate-x-1/2 z-50 no-print max-w-[95vw] overflow-x-auto">
+      <div class="backdrop-blur-xl bg-black/85 border border-white/15 rounded-full py-1.5 px-3.5 shadow-2xl flex items-center gap-2 text-xs whitespace-nowrap">
+        <span class="text-[11px] font-mono text-neutral-400 hidden sm:inline">Stack:</span>
+
+        <a
+          href="/"
+          target="_top"
+          class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-neutral-400 hover:text-white hover:bg-white/10 transition-colors font-medium"
+          title="Switch to Next.js (Production)"
+        >
+          <span>Next.js</span>
+        </a>
+
+        <a
+          href="/stacks/nuxt"
+          target="_top"
+          class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-neutral-400 hover:text-white hover:bg-white/10 transition-colors font-medium"
+          title="Switch to Nuxt 3 (Vue 3)"
+        >
+          <span>Nuxt 3</span>
+        </a>
+
+        <a
+          href="/stacks/django"
+          target="_top"
+          class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-neutral-400 hover:text-white hover:bg-white/10 transition-colors font-medium"
+          title="Switch to Django (Python 3.13)"
+        >
+          <span>Django</span>
+        </a>
+
+        <a
+          href="/stacks/springboot"
+          target="_top"
+          class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-neutral-400 hover:text-white hover:bg-white/10 transition-colors font-medium"
+          title="Switch to Spring Boot (Java 21)"
+        >
+          <span>Spring Boot</span>
+        </a>
+
+        <a
+          href="/stacks/laravel"
+          target="_top"
+          class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-neutral-400 hover:text-white hover:bg-white/10 transition-colors font-medium"
+          title="Switch to Laravel (PHP 8.4)"
+        >
+          <span>Laravel</span>
+        </a>
+
+        <a
+          href="/stacks/rails"
+          target="_top"
+          class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-neutral-400 hover:text-white hover:bg-white/10 transition-colors font-medium"
+          title="Switch to Rails 8 (Ruby 3.4)"
+        >
+          <span>Rails</span>
+        </a>
+
+        <a
+          href="/stacks/angular"
+          target="_top"
+          class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-neutral-400 hover:text-white hover:bg-white/10 transition-colors font-medium"
+          title="Switch to Angular (TypeScript 6.0)"
+        >
+          <span>Angular</span>
+        </a>
+
+        <a
+          href="/stacks/blazor"
+          target="_top"
+          class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-neutral-400 hover:text-white hover:bg-white/10 transition-colors font-medium"
+          title="Switch to Blazor (.NET 8 WASM)"
+        >
+          <span>Blazor</span>
+        </a>
+
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-semibold shadow-sm">
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+          Buffalo
+        </span>
+      </div>
+    </div>
+
+    <!-- Interactive PDF Modal -->
+    <div id="pdf-modal" class="fixed inset-0 z-50 hidden flex-col items-center justify-center p-4 bg-black/80 backdrop-blur-md">
+      <div class="relative w-full max-w-5xl h-[85vh] bg-neutral-900 border border-white/15 rounded-3xl overflow-hidden shadow-2xl flex flex-col">
+        <div class="flex items-center justify-between p-4 border-b border-white/10 bg-neutral-950/80">
+          <div class="flex items-center gap-2">
+            <span class="text-sm font-bold text-white">Reginald Alfret V — Official Resume</span>
+            <span class="text-xs font-mono text-neutral-400">(PDF Viewer)</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <a
+              href="/Reginald_Alfret_Resume.pdf"
+              download
+              class="px-3 py-1 rounded-lg bg-cyan-500/20 text-cyan-300 text-xs font-semibold hover:bg-cyan-500/30 transition-colors"
+            >
+              Download
+            </a>
+            <button
+              type="button"
+              onclick="togglePdfModal(false)"
+              class="px-3 py-1 rounded-lg bg-white/10 text-white text-xs font-semibold hover:bg-white/20 transition-colors"
+            >
+              ✕ Close
+            </button>
+          </div>
+        </div>
+        <iframe
+          src="/Reginald_Alfret_Resume.pdf"
+          class="w-full flex-1 border-0"
+          title="Reginald Alfret Resume"
+        ></iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function togglePdfModal(show) {
+      var modal = document.getElementById('pdf-modal');
+      if (modal) {
+        if (show) {
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        } else {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+      }
+    }
+  </script>
+</body>
+</html>
