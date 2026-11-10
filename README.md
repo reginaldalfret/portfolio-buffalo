@@ -1,47 +1,87 @@
 # Reginald Alfret V — Portfolio (Go Buffalo)
+## 12 Stacks. 1 Product. — Native Go Buffalo Implementation
 
-> **Go & Buffalo Web Framework Implementation** of Reginald Alfret's Liquid-Glass Obsidian Resume Portfolio.
-
-Explore the live unified multi-stack portfolio at [reginaldalfret.tech](https://reginaldalfret.tech) or the direct Go Buffalo build at [reginaldalfret.tech/stacks/buffalo](https://reginaldalfret.tech/stacks/buffalo).
-
----
-
-## ⚡ Architecture & Tech Stack
-
-- **Framework**: [Go Buffalo](https://gobuffalo.io/) (v1.1.4) + [Go 1.27](https://golang.org/)
-- **Templating**: [Plush v5](https://github.com/gobuffalo/plush) Server-Side Rendering
-- **Styling**: Tailwind CSS + Obsidian Glassmorphic Palette (`#06B6D4` Buffalo Turquoise branding)
-- **Features**:
-  - 30 Merged Open-Source PRs across Apple, Google, Microsoft, Meta, AWS, NVIDIA, NASA, Netflix, Linux Foundation & Apache
-  - Professional Experience, Hackathon Victories, Research, and Certified Credentials
-  - Interactive PDF Modal / Original Resume Viewer
-  - Seamless Multi-Stack Cross-Navigation Dock & Switcher (9 Stacks)
-  - Synchronous `is-embedded` iframe detection preventing duplicate navigation UI
-  - Standalone embedded binary compilation via Go `embed.FS`
+**Author:** Reginald Alfret V  
+**Role:** Open-Source Contributor · AI & Data Science Engineer · Full-Stack Developer  
+**Live Personal Portfolio:** [https://reginaldalfret.tech](https://reginaldalfret.tech)  
+**Central Engineering Lab:** [https://reginaldalfret.tech/lab](https://reginaldalfret.tech/lab)  
+**Repository:** [https://github.com/reginaldalfret/portfolio-buffalo](https://github.com/reginaldalfret/portfolio-buffalo)  
+**Runtime Classification:** `NATIVE VERIFIED (NATIVE GO DAEMON)`
 
 ---
 
-## 🚀 Running Locally
+### 1. Executive Summary
 
+This repository is one of **twelve independent native technology implementations** of the personal portfolio of Reginald Alfret V. 
+
+The core concept is:
+
+**12 STACKS. 1 PRODUCT.**
+
+Rather than rendering static HTML replicas or shared client templates, this repository is built genuinely within the **Go Buffalo** ecosystem, utilizing Go 1.24 / 1.27 and native framework conventions (Plush High-Speed SSR Templates).
+
+---
+
+### 2. Architectural Specification
+
+| Metric / Attribute | Specification |
+|---|---|
+| **Framework** | Go Buffalo (1.1.4 / 1.27) |
+| **Language** | Go 1.24 / 1.27 |
+| **Runtime Engine** | Compiled Native Go Binary (Gorilla Mux / Plush) |
+| **Render Paradigm** | Plush High-Speed SSR Templates |
+| **Verification Status** | NATIVE VERIFIED (NATIVE GO DAEMON) |
+| **Parent Ecosystem** | 12 Stacks. 1 Product. Engineering Showcase |
+
+---
+
+### 3. Navigation & Ecosystem Integration
+
+This application includes contextual integration back to the master portfolio ecosystem:
+
+1. **Top Context Banner:** Identifies that this deployment is part of the 12 Stacks. 1 Product experiment.
+2. **Personal Portfolio Link:** Direct link to [https://reginaldalfret.tech](https://reginaldalfret.tech).
+3. **Engineering Lab Link:** Direct link to [https://reginaldalfret.tech/lab](https://reginaldalfret.tech/lab) where users can compare this framework's performance, memory footprint, and architecture against the other 11 stacks.
+
+---
+
+### 4. Prerequisites & Local Development
+
+#### Prerequisites
+- Go 1.22+ (Go 1.24 recommended)
+
+#### Installation
 ```bash
-# Ensure Go 1.27+ is installed
-go version
-
-# Clone and run
 git clone https://github.com/reginaldalfret/portfolio-buffalo.git
-cd portfolio-buffalo
-
-# Run server on port 8087
-go run .
+cd Portfolio-Buffalo
+go mod download
 ```
 
-Open [http://127.0.0.1:8087](http://127.0.0.1:8087) in your browser.
+#### Running Development Server
+```bash
+go run main.go
+```
+
+#### Production Build
+```bash
+go build -o bin/app
+```
+
+#### Running Test Suite
+```bash
+go test ./...
+```
 
 ---
 
-## 📦 Static Export
+### 5. Benchmark & Empirical Telemetry
 
-```bash
-go run . -export -out ./dist
-```
-Exports standalone, self-contained static HTML assets ready for edge hosting on Vercel, Netlify, or AWS CloudFront.
+All performance metrics for this Go Buffalo implementation were audited under controlled scientific conditions (10 automated test trials, Navigation Timing Level 2, Resource Timing manifests, Lighthouse CLI).
+
+View verified telemetry, cold/warm cache comparisons, and payload breakdowns in the [Polyglot Engineering Lab](https://reginaldalfret.tech/lab).
+
+---
+
+### 6. License & Copyright
+
+© 2026 Reginald Alfret V. All rights reserved.

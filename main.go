@@ -75,9 +75,10 @@ func main() {
 	}
 
 	port := envy.Get("PORT", "8087")
+	host := envy.Get("HOST", "0.0.0.0")
 	app := buffalo.New(buffalo.Options{
 		Env:  "development",
-		Addr: "127.0.0.1:" + port,
+		Addr: host + ":" + port,
 	})
 
 	r := render.New(render.Options{
